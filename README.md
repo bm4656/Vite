@@ -3,7 +3,7 @@
 > 원티드 챌린지 중 spa-router 과제 내용입니다.
 > 
 
-<img src='https://github.com/bm4656/spa-router/assets/65716445/46167f28-21c8-4c5f-a027-1d2f487d96e1' width='500px'/>
+<img src='https://github.com/bm4656/spa-router/assets/65716445/c9042777-488a-45f7-b523-a0a5c2a5d70e' width='500px'/>
 
 ## 요구 사항
 
