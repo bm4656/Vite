@@ -3,6 +3,8 @@
 > 원티드 챌린지 중 spa-router 과제 내용입니다.
 > 
 
+<img src='https://github.com/bm4656/spa-router/assets/65716445/46167f28-21c8-4c5f-a027-1d2f487d96e1' width='500px'/>
+
 ## 요구 사항
 
 **1) 해당 주소로 진입했을 때 아래 주소에 맞는 페이지가 렌더링 되어야 한다.**
@@ -30,7 +32,6 @@ ReactDOM.createRoot(container).render(
 ```tsx
 const { push } = useRouter();
 ```
-
 ## 구현 내용
 
 1. 먼저 페이지들을 만든 후 history API 테스트겸 페이지 이동을 구현해봤다.
