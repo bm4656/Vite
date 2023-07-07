@@ -3,7 +3,8 @@ import { RouteContext } from '../components/Router';
 
 export default function useRouter() {
   const { setPathname } = useContext(RouteContext);
-  const push = ({ state, url }: { state?: unknown; url?: string }) => {
+
+  const push = ({ state, url }: { state?: unknown; url: string }) => {
     history.pushState(state, '', url);
     setPathname(window.location.pathname);
   };
@@ -13,10 +14,12 @@ export default function useRouter() {
   };
 
   useEffect(() => {
-    window.addEventListener('popstate', handlePopState);
+    window.onpopstate = handlePopState;
+
     return () => {
-      window.removeEventListener('popstate', handlePopState);
+      window.onpopstate = null;
     };
   }, []);
+
   return { push };
 }
